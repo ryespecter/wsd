@@ -5,7 +5,7 @@ body {
 	padding: 0;
 }
 
-#wrapper{
+#wrapper {
 	width: 100%;
 	margin: 0 auto;
 }
@@ -45,7 +45,7 @@ h1 {
 	background: linear-gradient(#fff, #000, #fff);
 	border: 1px solid #fff;
 	border-radius: 6px;
-	margin: 0 10px 0;
+	margin: 0 0 0 10px;
 	display: block;
 	height: 30px;
 	line-height: 30px;
@@ -53,7 +53,7 @@ h1 {
 	color: #fff;
 }
 
-.navlink:hover{
+.navlink:hover {
 	background: linear-gradient(#000, #fff, #000);
 	color: #000;
 }
@@ -111,12 +111,12 @@ img {
 	-moz-columns: 200px 3;
 }
 
-.services1{
+.services1 {
 	padding: 3.125% 0 0; /* 30px */
 	text-align: center;
 }
 
-.services2{
+.services2 {
 	list-style: circle inside;
 	padding: 0 0 3.125%; /* 30px */
 	text-align: center;
@@ -129,7 +129,7 @@ img {
 	float: left;
 }
 
-#buildheader{
+#buildheader {
 	text-align: center;
 	padding: 3.125% 0 0; /* 15px */
 }
@@ -143,28 +143,44 @@ img {
 	padding: 0 3.125% 0; /* 15px */
 }
 
+#buildpreviews {
+	width: 50%; /* 480px */
+	margin: 0 0 10.41666666666667%; /* 50px */
+	padding: 0;
+	float: left;
+
+}
+
 .gallery {
 	list-style: none;
 }
 
 #p1 {
-	width: 25%;
+	border: 5px solid;
+	width: 31.25%; /* 150px */
+	margin: 2.08333333333333%; /* 10px */
 	float: left;
 }
 
 #p2 {
-	width: 25%;
-	float: right;
+	border: 5px solid;
+	width: 31.25%; /* 150px */
+	margin: 2.08333333333333%; /* 10px */
+	float: left;
 }
 
 #p3 {
-	width: 25%;
+	border: 5px solid;
+	width: 31.25%; /* 150px */
+	margin: 2.08333333333333%; /* 10px */
 	float: left;
 }
 
 #p4 {
-	width: 25%;
-	float: right;
+	border: 5px solid;
+	width: 31.25%; /* 150px */
+	margin: 2.08333333333333%; /* 10px */
+	float: left;
 }
 
 aside {
@@ -197,6 +213,51 @@ aside {
 
 #elink:hover {
 	color: #c0c0c0;
+}
+
+/*-------------------------Media Queries--------------------------*/
+
+	/*Tablet Portrait to Standard 960(devices and browsers)*/
+	@media screen and (min-width: 768px) and (max-width: 959px){
+
+}
+
+	/*Mobile Landscape to Tablet Portrait(devices and browsers)*/
+	@media only screen and (min-width: 480px) and (max-width: 767px){
+
+}
+
+	/*Mobile Portrait to Mobile Landscape(devices and browsers)*/
+	@media only screen and (max-width: 479px){
+
+		
+
+		h1 {
+			font-size: 2em;
+		}
+
+		#darkghost {
+			width: 100%;
+			margin: 0;
+			height: auto;
+			float: none;
+		}
+
+		.welcomenote {
+			width: 100%;
+			height: auto;
+		}
+
+		#buildlogs {
+			width: 100%;
+			float: none;
+		}
+
+		#buildpreviews {
+			width: 100%;
+			float: none;
+		}
+
 }
 
 /*-------------------------Footer Content-------------------------*/
