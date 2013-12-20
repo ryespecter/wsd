@@ -45,7 +45,7 @@ h1 {
 	background: linear-gradient(#fff, #000, #fff);
 	border: 1px solid #fff;
 	border-radius: 6px;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 10%; /* 10px */
 	display: block;
 	height: 30px;
 	line-height: 30px;
@@ -189,30 +189,29 @@ aside {
 }
 
 #contactus {
+	height: 520px;
 	color: #fff;
 	background: #000;
 	opacity: .8;
 	clear: both;
 }
 
-.contactus {
-	color: #fff;
+table {
+	margin: 1.5625%; /* 15px */
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	text-align: center;
+	float: left;
 }
 
-.contactinfo {
-	padding: 0 1.5625% 0; /* 15px */
+td {
+	border: 1px solid #fff;
+	padding: 10px;
 }
 
-.email {
-	padding: 0 1.5625% 3.125%; /* 15px 30px */
-}
-
-#elink {
-	color: #fff;
-}
-
-#elink:hover {
-	color: #c0c0c0;
+form {
+	padding: 10px;
+	float: right;
 }
 
 /*-------------------------Media Queries--------------------------*/
@@ -225,20 +224,48 @@ aside {
 	/*Mobile Landscape to Tablet Portrait(devices and browsers)*/
 	@media only screen and (min-width: 480px) and (max-width: 767px){
 
+		#darkghost {
+			width: 100%;
+			margin: 0 auto;
+			height: auto;
+			vertical-align: middle;
+			text-align: center;
+			float: none;
+		}
+
+		.welcomenote {
+			width: 100%;
+			height: auto;
+		}
+		
+		#buildlogs {
+			width: 100%;
+		}
+		
+		.gallery {
+			float: none;
+		}
+
 }
 
 	/*Mobile Portrait to Mobile Landscape(devices and browsers)*/
 	@media only screen and (max-width: 479px){
 
-		
-
 		h1 {
-			font-size: 2em;
+			font-size: 1.75em;
+		}
+		
+		h2, h3 {
+			font-size: 1.5em;
+		}
+		
+		.navbutton {
+			float: none;
 		}
 
 		#darkghost {
 			width: 100%;
-			margin: 0;
+			margin: 0 auto;
 			height: auto;
 			float: none;
 		}
@@ -257,6 +284,10 @@ aside {
 			width: 100%;
 			float: none;
 		}
+		
+		form {
+			display: none;
+		}
 
 }
 
@@ -265,6 +296,5 @@ aside {
 footer {
 	color: #fff;
 	background: #000;
-	margin: 435px 0 0;
 	text-align: center;
 }

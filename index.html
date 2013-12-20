@@ -40,8 +40,7 @@
 				
 			<h2>Welcome to Specter Computers</h2>
 		
-			<p id="darkghost"><img src="images/dark_ghost.jpg" width="" height=""
-			alt="The Dark Ghost"/></p>
+			<p id="darkghost"><img src="images/dark_ghost.jpg" alt="The Dark Ghost"/></p>
 		
 			<p class="welcomenote">So glad you could stop by. This site is to inform new and/or 
 			prospective clients of the services provided. We would love to hear from you, as your
@@ -103,14 +102,10 @@
 		<article id="buildpreviews">
 				
 				<ul class="gallery">
-					<li id="p1"><img src="images/personal_build0.jpg" width="" height=""
-					alt=""/></li>
-					<li id="p2"><img src="images/personal_build1.jpg" width="" height=""
-					alt=""/></li>
-					<li id="p3"><img src="images/personal_build2.jpg" width="" height=""
-					alt=""/></li>
-					<li id="p4"><img src="images/personal_build3.jpg" width="" height=""
-					alt=""/></li>
+					<li id="p1"><img src="images/personal_build0.jpg" alt=""/></li>
+					<li id="p2"><img src="images/personal_build1.jpg" alt=""/></li>
+					<li id="p3"><img src="images/personal_build2.jpg" alt=""/></li>
+					<li id="p4"><img src="images/personal_build3.jpg" alt=""/></li>
 				</ul>
 				
 		</article>
@@ -123,15 +118,58 @@
 		
 		<section id="contactus">
 		
-			<h3 class="contactus">Contact Us</h3>
+			<h3>Contact Us</h3>
+				
+		<table>
+			
+			<tr>
+				<th>Business Hours</th>
+				<th>Telephone</th>
+				<th>Location</th>
+			</tr>
+			
+			<tr>
+				<td>8AM-5PM (M-F)</td>
+				<td>+1 (800) 555-5555</td>
+				<td>1432 Main St.<br/>
+				Azle, TX 76020</td>
+			</tr>
+
+		</table>
 		
-			<p class="contactinfo">Business Hours:<br/>
-			8:00AM-5:00PM (M-F)</p>
-			<p class="contactinfo">Telephone:<br/>
-			+1 (800) 555-5555</p>
-			<p class="email">Email:<br/>
-			<a id="elink" href="mailto:support@spectercomputers.com">support@spectercomputers.com</a></p>
+		<form method="get" action="forms.html">
 		
+			<div>
+				<label for="firstname">First Name</label><br/>
+				<input type="text" name="firstname" id="firstname"/>
+			</div>
+			
+			<div>
+				<label for="lastname">Last Name</label><br/>
+				<input type="text" name="lastname" id="lastname"/>
+			</div>
+			
+			<div>
+				<label for="phone">Phone Number</label><br/>
+				<input type="text" name="phone" id="phone"/>
+			</div>
+			
+			<div>
+				<label for="email">Email Address</label><br/>
+				<input type="text" name="email" id="email"/>
+			</div>
+			
+			<div>
+				<label for="message">Message</label><br/>
+				<textarea rows="15" cols="50" name="message" id="message"></textarea>
+			</div>
+			
+			<div>
+				<button type="submit" name="submit" class="button">Send Message</button>
+			</div>
+			
+		</form>
+			
 		</section>
 		
 		</div><!-- end of bodycontent div -->
